@@ -1,6 +1,5 @@
-import { Hono } from "hono";
 import { handle } from "hono/vercel";
-import app from "./app";
+import * as app from "./app";
 
 const handler = handle(app);
 
