@@ -1,11 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api"
-    }
-  ],
-  "redirects": [
-    { "source": "/", "destination": "/api", "permanent": false }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "rewrites": [{ "source": "/(.*)", "destination": "/src" }]
 }
